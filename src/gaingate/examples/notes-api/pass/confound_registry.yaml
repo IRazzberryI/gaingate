@@ -1,0 +1,12 @@
+# Generic confound registry (same list shipped with the templates).
+# SYNTHETIC EXAMPLE — not a real project
+
+confounds:
+  - name: shared fixture IDs
+    meaning: "More than one actor or tenant accidentally shared the same identifiers."
+  - name: cached privileged session
+    meaning: "A previous privileged session or process state leaked into the reproduction."
+  - name: mislabeled user in setup
+    meaning: "The identity used in the run was not the identity the claim assumes."
+  - name: wrong artifact
+    meaning: "The run was not performed on the pinned tag, commit, and artifact hash."
