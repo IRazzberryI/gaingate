@@ -1,0 +1,14 @@
+# Generic confound registry shipped with GainGate.
+# These are common ways a reproduction can look like a gain without being one.
+# Copy names you need into gate.yaml and clear each with a one-line reason.
+# This list is not exhaustive; add your own as needed.
+
+confounds:
+  - name: shared fixture IDs
+    meaning: "More than one actor or tenant accidentally shared the same identifiers."
+  - name: cached privileged session
+    meaning: "A previous privileged session or process state leaked into the reproduction."
+  - name: mislabeled user in setup
+    meaning: "The identity used in the run was not the identity the claim assumes."
+  - name: wrong artifact
+    meaning: "The run was not performed on the pinned tag, commit, and artifact hash."

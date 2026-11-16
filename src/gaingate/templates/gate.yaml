@@ -1,0 +1,45 @@
+# GainGate differential-impact gate.
+# Fill every required field before running `gaingate gate validate`.
+# Structured baseline/gained records are compared mechanically:
+# gained must contain at least one (action, resource, constraint) not present in baseline.
+
+case_id: ""
+subject: ""
+synthetic: false
+
+attacker_position: ""
+
+baseline_capability: ""
+baseline: []
+  # - action: ""
+  #   resource: ""
+  #   constraint: ""
+
+gained_capability: ""
+gained: []
+  # - action: ""
+  #   resource: ""
+  #   constraint: ""
+
+control_present: ""
+control_location: ""
+repro_time: ""
+
+# Named confounds. Remove any that do not apply, or add your own.
+# Each remaining entry must be cleared with a one-line reason.
+confounds:
+  - name: shared fixture IDs
+    cleared: false
+    reason: ""
+  - name: cached privileged session
+    cleared: false
+    reason: ""
+  - name: mislabeled user in setup
+    cleared: false
+    reason: ""
+  - name: wrong artifact
+    cleared: false
+    reason: ""
+
+# Hop ids this claim depends on. Each must be EXECUTED with evidence.
+required_hops: []

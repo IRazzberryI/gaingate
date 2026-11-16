@@ -1,0 +1,11 @@
+# Hop log. An ordered list of claim-steps.
+# Labels: EXECUTED | SOURCE_ASSERTED | NOT_FEASIBLE
+# EXECUTED requires a non-empty evidence file that resolves inside
+# evidence/. The tool does not run hops and does not verify that the
+# file is a truthful record of the step.
+
+hops: []
+  # - id: H1
+  #   description: ""
+  #   label: EXECUTED
+  #   evidence: evidence/h1.log
