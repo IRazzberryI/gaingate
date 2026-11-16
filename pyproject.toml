@@ -1,0 +1,47 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gaingate"
+version = "0.1.3"
+description = "Local CLI that pins the artifact you tested, structures a clean-room reproduction, and fails any finding whose demonstrated capability does not strictly exceed the attacker's baseline."
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.10"
+authors = [{ name = "GainGate contributors" }]
+dependencies = [
+    "pyyaml>=6.0",
+]
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "Topic :: Security",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=7.0"]
+
+[project.scripts]
+gaingate = "gaingate.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+gaingate = [
+    "templates/*",
+    "examples/notes-api/*",
+    "examples/notes-api/pass/*",
+    "examples/notes-api/pass/evidence/*",
+    "examples/notes-api/fail-baseline/*",
+    "examples/notes-api/fail-baseline/evidence/*",
+    "examples/notes-api/fail-required-hop/*",
+    "examples/notes-api/fail-required-hop/evidence/*",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
