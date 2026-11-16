@@ -1,0 +1,21 @@
+# SYNTHETIC EXAMPLE — not a real project
+hops:
+  - id: H1
+    description: "Create two isolated tenants and one note in tenant B"
+    label: EXECUTED
+    evidence: evidence/h1_setup.log
+    evidence_sha256: 610a95cf6fea2b2c27dfbcaee343ead7ca0590bfe1d154936532fb418fafccc1
+  - id: H2
+    description: "As tenant-A user, request tenant-B note id and receive its body"
+    label: EXECUTED
+    evidence: evidence/h2_cross_tenant_read.log
+    evidence_sha256: 9d34c1d1fbb3849279a0404831dec8aebc230e5e5063112ae97f7302b504bff7
+  - id: H3
+    description: "Confirm the body matches tenant B's note, not a tenant-A copy"
+    label: EXECUTED
+    evidence: evidence/h3_content_compare.log
+    evidence_sha256: 69a614343574414103f7dcc1130bcb794542c985a15c61c883b6063e2f0cd286
+  - id: H4
+    description: "Whether a similar check fails in an older, unsupported release"
+    label: NOT_FEASIBLE
+    reason: "Out of v1 scope; operator chose not to run historical versions"
