@@ -1,0 +1,6 @@
+# SYNTHETIC EXAMPLE — not a real project
+# notes-api local reproduction, hop H2
+authenticated as user-a (tenant A)
+GET /notes/B-1
+HTTP 200
+body: TENANT_B_SECRET_NOTE

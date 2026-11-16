@@ -1,0 +1,4 @@
+# SYNTHETIC EXAMPLE — not a real project
+# notes-api local reproduction, hop H3
+body of retrieved note equals tenant B's note B-1
+body does not appear in tenant A's notes
