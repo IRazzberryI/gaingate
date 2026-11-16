@@ -1,0 +1,40 @@
+# SYNTHETIC EXAMPLE — not a real project
+case_id: SYN-0001
+subject: notes-api
+synthetic: true
+
+attacker_position: "authenticated user in tenant A, can read own notes"
+
+baseline_capability: "read notes that already belong to tenant A"
+baseline:
+  - action: read
+    resource: notes
+    constraint: "owner is tenant A"
+
+gained_capability: "read a note that also belongs to tenant A, via an alternate URL"
+gained:
+  - action: read
+    resource: notes
+    constraint: "owner is tenant A"
+
+control_present: "tenant ownership check on note read"
+control_location: "note read authorization"
+repro_time: "2026-11-13T10:15:00+01:00"
+
+confounds:
+  - name: shared fixture IDs
+    cleared: true
+    reason: "operator used two separately created tenants"
+  - name: cached privileged session
+    cleared: true
+    reason: "reproduced after a clean process restart"
+  - name: mislabeled user in setup
+    cleared: true
+    reason: "identity confirmed in the issued session"
+  - name: wrong artifact
+    cleared: true
+    reason: "run used the pinned tag v9.9.9 and the recorded artifact digest"
+
+required_hops:
+  - H1
+  - H2

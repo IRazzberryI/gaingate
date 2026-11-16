@@ -1,0 +1,6 @@
+# SYNTHETIC EXAMPLE — not a real project
+created tenant A (id=tenant-a)
+created note A-1 in tenant A with body TENANT_A_OWN_NOTE
+GET /notes/A-1
+HTTP 200
+body: TENANT_A_OWN_NOTE

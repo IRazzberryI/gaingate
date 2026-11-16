@@ -1,0 +1,5 @@
+# SYNTHETIC EXAMPLE — not a real project
+authenticated as user-a (tenant A)
+GET /legacy/notes/A-1
+HTTP 200
+body: TENANT_A_OWN_NOTE
