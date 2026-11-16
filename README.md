@@ -143,7 +143,9 @@ These limits are known and are not enforced in this release:
 
 MIT. See `LICENSE`.
 
-**Optional template pack.** GainGate itself is free and MIT-licensed, and everything described above works without paying anything. If you want ready-made starting points, an optional template pack is available for US$9 (paid in crypto) at https://gaingate-by-ra1nzz.bytesell.app/product/gaingate-template-pack-1-0. It contains six case templates, two fictional worked examples (one PASS, one honest FAIL) and a guide to writing a differential-impact claim; the full file list is below, copied from the pack's own CONTENTS.md. Everything in it is also something you could write yourself from this README. The pack adds templates only: it does not change what the CLI checks, does not make evidence tamper-proof, and does not improve lookalike detection beyond what's described above. If the pack doesn't match this description, email samedaykits@gmail.com and you'll get a full refund. This doesn't limit any rights you have under your local consumer law.
+GainGate is Ra1nzZ's project; the code and docs were written with AI assistance and reviewed before release.
+
+**Optional template pack.** GainGate itself is free and MIT-licensed, and everything described above works without paying anything. If you want ready-made starting points, an optional template pack is available for US$9 (paid in crypto) at https://gaingate-by-ra1nzz.bytesell.app/products/gaingate-template-pack-1-0. It contains six case templates, two fictional worked examples (one PASS, one honest FAIL) and a guide to writing a differential-impact claim; the full file list is below, copied from the pack's own CONTENTS.md. Everything in it is also something you could write yourself from this README. The pack adds templates only: it does not change what the CLI checks, does not make evidence tamper-proof, and does not improve lookalike detection beyond what's described above. If the pack doesn't match this description, email samedaykits@gmail.com and you'll get a full refund. This doesn't limit any rights you have under your local consumer law.
 
 ### Pack contents
 
