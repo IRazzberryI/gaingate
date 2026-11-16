@@ -1,0 +1,12 @@
+# SYNTHETIC EXAMPLE — not a real project
+hops:
+  - id: H1
+    description: "Create a tenant A note and request it at the usual URL"
+    label: EXECUTED
+    evidence: evidence/h1_setup.log
+    evidence_sha256: c390dd49ba9b23fe607fdcb8f54ae51e9d390dd7a10c16b88c13d56338d93476
+  - id: H2
+    description: "Request the same tenant-A note through an alternate URL"
+    label: EXECUTED
+    evidence: evidence/h2_alternate_url.log
+    evidence_sha256: c44197513c8fa2deba455964d05ecfeeb95c33763e40ad3c6c8327657eb8284f

@@ -1,0 +1,11 @@
+# SYNTHETIC EXAMPLE — not a real project
+case_id: SYN-0001
+subject: notes-api
+operator_stated_origin: "https://git.example.invalid/example-org/notes-api.git"
+release_tag: v9.9.9
+commit_sha: aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+artifact_sha256: bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+pin_method: offline_operator_supplied
+confirmed: false
+warnings:
+  - "Tag and SHA were recorded from operator input and were not confirmed with git ls-remote."
