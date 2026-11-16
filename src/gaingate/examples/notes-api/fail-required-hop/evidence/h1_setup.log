@@ -1,0 +1,4 @@
+# SYNTHETIC EXAMPLE — not a real project
+created tenant A (id=tenant-a)
+created tenant B (id=tenant-b)
+created note B-1 in tenant B with body TENANT_B_SECRET_NOTE

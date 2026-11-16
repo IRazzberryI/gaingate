@@ -1,0 +1,11 @@
+# SYNTHETIC EXAMPLE — not a real project
+hops:
+  - id: H1
+    description: "Create two isolated tenants and one note in tenant B"
+    label: EXECUTED
+    evidence: evidence/h1_setup.log
+    evidence_sha256: 5fa6cc328040978e8dd00199116e8c08793e76d881440ffebf447f6e5c6e998c
+  - id: H2
+    description: "As tenant-A user, request tenant-B note id and receive its body"
+    label: SOURCE_ASSERTED
+    reason: "Inferred from source only; this step was not run"
