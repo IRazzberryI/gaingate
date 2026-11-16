@@ -1,0 +1,13 @@
+# Provenance pin. Record the exact artifact you tested before reproduction.
+# The tool never ships a default remote. Use `gaingate pin --offline`, or pass
+# --origin with a repository URL you supply.
+
+case_id: ""
+subject: ""
+operator_stated_origin: ""
+release_tag: ""
+commit_sha: ""
+artifact_sha256: ""
+pin_method: ""          # offline_operator_supplied | git_ls_remote_user_url
+confirmed: false
+warnings: []
